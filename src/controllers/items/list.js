@@ -1,3 +1,5 @@
+const _ = require('lodash');
+
 const list = ({ Item }) => async (req, res, next) => {
 
   try {

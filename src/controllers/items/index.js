@@ -1,6 +1,6 @@
 const { Router: router } = require('express');
 
-const { get } = require('./get');
+const { getItems } = require('./getItems');
 const { list } = require('./list');
 const { create } = require('./create');
 const { update } = require('./update');
@@ -10,7 +10,7 @@ module.exports = (models) => {
   const api = router();
 
   api.get('/', list(models));
-  api.get('/:_id', get(models));
+  api.get('/:_id', getItems(models));
   api.post('/', create(models));
   api.patch('/:_id', update(models));
   api.delete('/:_id', remove(models));

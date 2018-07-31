@@ -7,7 +7,7 @@ const schema = new Schema({
     type: String,
     required: [true],
   },
-  createdID: {
+  listId: {
     type: ObjectId,
   }
 });

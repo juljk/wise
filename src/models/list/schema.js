@@ -6,9 +6,6 @@ const schema = new Schema({
   description: {
     type: String,
     required: [true],
-  },
-  createdID: {
-    type: ObjectId,
   }
 });
 
