@@ -11,7 +11,7 @@ const create = ({ List }) => async (req, res, next) => {
     _.extend(list, req.body);
     await list.save();
 
-    // return sendOne(res, { list });
+    return sendOne(res, { list });
   } catch (error) {
     next(error);
   }
