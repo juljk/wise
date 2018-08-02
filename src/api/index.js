@@ -1,6 +1,6 @@
 const express = require('express');
 
-const { errorHandler } = require('../middleware');
+const { errorHandler } = require('../helpers');
 
 // list of models here
 const { List } = require('../models/list');

@@ -1,5 +1,5 @@
 const { NotAcceptable } = require('rest-api-errors');
-const { sendOne } = require('../../middleware');
+const { sendOne } = require('../../helpers');
 const _ = require('lodash');
 
 const create = ({ Item }) => async (req, res, next) => {
